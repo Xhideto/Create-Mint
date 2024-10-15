@@ -1,19 +1,16 @@
 # Create & Mint - Batcave
 
-The smart contract creates an ERC 20 token called "BatCave" using the symbol "BAT". There were also functionalities of minting new tokens and burning tokens and pausing/unpausing token transfers.
+The smart contract creates an ERC 20 token called "BatCave" using the symbol "BAT". There were also functionalities of minting new tokens and burning tokens and anyone can transfer token to other addresses.
 
 ## Description
 
-This smart contract ensures that only the owner can `mint`, `burn` tokens, `pause`, or `unpause`, `transfers`, providing control and flexibility.
+This smart contract ensures that only the owner can `mint`, `burn` tokens, and `transfers`, providing control and flexibility.
 
 ## Functions
 
-- `mint()`: Allows the owner to create new tokens and assign them to a specified address.
+- `mint()`: The owner can create new tokens and assign them to a specified address.
+- `transfer`: Allows everyone to transfer tokens to other addresses.
 - `burn()`: Allows everyone to burn tokens.
-- `update()`: Overrides its own function to integrate `ERC20Pausable` functionalty.
-- `pause()`: Allows the owner to pause all token transfers.
-- `unpause()`: Allows the owner to resume token transfers.
-- `transfer`: Allows everyone to transfer tokens to other adresses.
 
 ## Getting Started
 
@@ -46,7 +43,6 @@ To use this contract, This can be done using the online version of the Solidity 
 
 - Click on the drop-down deployed “BATCAVE” contract.
 - Mint a token(Owner only)
-- Use the `Puase` and `Unpause` functions to pause or resume the transactions.
 - Use `transfer` to transfer token another address.
 - Lastly, `burn` tokens with any specified amount.
 
